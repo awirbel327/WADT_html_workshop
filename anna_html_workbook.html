@@ -1,0 +1,70 @@
+#Link 
+
+<!-- Slide 37 -->
+<form name="hello" id="123456" action="/action_page.php" method="get">
+<p>If you enter unicorn, we donate one euro </p>
+<label for="fname">favorite animal:</label><br>
+<input type="text" value="unicorn"/>
+<form action="/action_page.php">
+<p>
+ <input type="checkbox" id="checkbox" name="vehicle2" value="100 euros have been donated ">
+ <label for="checkbox"> I am a unicorn myself  </label><br>
+<input type="submit" value="Submit">
+</form>
+
+
+<!-- Slide 37 -->
+<iframe width="420" height="315" allow="autoplay" allowfullscreen>
+src="https://www.youtube.com/watch?v=hHT_hEuTtxg&list=RDhHT_hEuTtxg&start_radio=1">
+</iframe>
+UNTERTITEL 
+
+
+<!-- Slide 39 -->
+<button onclick="getLocation()">Try It</button>
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+<!-- Slide 44 -->
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+<p>Drag the W3Schools image into the rectangle:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="anna.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
