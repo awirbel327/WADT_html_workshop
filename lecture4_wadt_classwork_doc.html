@@ -1,0 +1,521 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.12  (Win32)">
+	<META NAME="CREATED" CONTENT="20211015;6101700">
+	<META NAME="CHANGED" CONTENT="20211015;6212000">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 2cm }
+		P { margin-bottom: 0.25cm; direction: ltr; color: #000000; line-height: 115%; widows: 2; orphans: 2 }
+		P.western { font-family: "Liberation Serif", "Times New Roman", serif; font-size: 12pt; so-language: en-US }
+		P.cjk { font-family: "Noto Serif CJK SC"; font-size: 12pt; so-language: zh-CN }
+		P.ctl { font-family: "Lohit Devanagari"; font-size: 12pt; so-language: hi-IN }
+		H1 { margin-bottom: 0.21cm; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+		H1.western { font-family: "Liberation Sans", "Arial", sans-serif; font-size: 18pt; so-language: en-US }
+		H1.cjk { font-family: "Noto Sans CJK SC"; font-size: 18pt; so-language: zh-CN }
+		H1.ctl { font-family: "Lohit Devanagari"; font-size: 18pt; so-language: hi-IN }
+		H2 { margin-top: 0.35cm; margin-bottom: 0.21cm; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+		H2.western { font-family: "Liberation Serif", "Times New Roman", serif; so-language: en-US }
+		H2.cjk { font-family: "Noto Serif CJK SC"; so-language: zh-CN }
+		H2.ctl { font-family: "Lohit Devanagari"; so-language: hi-IN }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="de-DE" TEXT="#000000" DIR="LTR">
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>Disclaimer: this is TSI University task for HTML, CSS and SASS
+workshop, not for publishing anywhere on the media. Please include
+this disclaimer</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" ALIGN=CENTER STYLE="margin-top: 0.42cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid">
+<FONT FACE="Liberation Sans, Arial, sans-serif"><FONT SIZE=6 STYLE="font-size: 28pt"><B>What
+is Sass? Your guide to this top CSS preprocessor</B></FONT></FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>By Tammy Coron January 10, 2020</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" ALIGN=CENTER STYLE="margin-top: 0.11cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid">
+<FONT FACE="Liberation Sans, Arial, sans-serif"><FONT SIZE=5>Discover
+what Sass is, and learn how to start using it.</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I><B>What is Sass? That's the question we here to answer. If you're
+new to web design, you've probably heard the term floating around,
+but you might not be quite up to speed with exactly what Sass is,
+what is does, and whether or not you should be using it. In short,
+Sass is a CSS preprocessor, which adds special features such as
+variables, nested rules and mixins (sometimes referred to as
+syntactic sugar) into regular CSS. The aim is to make the coding
+process simpler and more efficient. Let's explore in more detail. </B></I>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I><B>Article source:
+https://www.creativebloq.com/web-design/what-is-sass-111517618</B></I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<H1 LANG="en-US" CLASS="western" ALIGN=LEFT>What is a CSS
+preprocessor?</H1>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+A CSS preprocessor is a scripting language that extends CSS by
+allowing developers to write code in one language and then compile it
+into CSS. Sass is perhaps the most popular preprocessor around right
+now, but other well-known examples include Less and Stylus.</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+Before we go any further, a quick public service announcement is in
+order: most web designers would say that if you're new to CSS, you're
+better off avoiding Sass (or any preprocessors, extensions or
+frameworks) while you're still learning. While it's true they offer
+many advantages in speed and efficiency, it's important that you
+really get to grips with the basics of CSS. Make sure you learn the
+core concepts before you start exploring shortcuts and confusing
+things.</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<H1 LANG="en-US" CLASS="western" ALIGN=LEFT>What is Sass?</H1>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<B>Sass is arguably the most useful of all CSS extensions</B></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+Sass (which stands for 'Syntactically awesome style sheets) is an
+extension of CSS that enables you to use things like variables,
+nested rules, inline imports and more. It also helps to keep things
+organised and allows you to create style sheets faster.</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+Sass is compatible with all versions of CSS. The only requirement for
+using it is that you must have Ruby installed. Users are also asked
+to follow the Sass Community Guidelines.</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+How to use Sass</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+In the following section, we'll outline some basic tips for using
+Sass, using examples from the official Sass website. Take a look at
+the Sass Documentation for additional references and examples.</P>
+<H1 LANG="en-US" CLASS="western" ALIGN=LEFT>Syntax</H1>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<B>Sass includes two syntax options:</B></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+	SCSS (Sassy CSS): Uses the .scss file extension and is fully
+	compliant with CSS syntax</P>
+	<LI><P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+	Indented (simply called 'Sass'): Uses .sass file extension and
+	indentation rather than brackets; it is not fully compliant with CSS
+	syntax, but it's quicker to write</P>
+</UL>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>Note that files can be converted from one syntax to the other
+using the sass-convert command.</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<H1 LANG="en-US" CLASS="western" ALIGN=LEFT>Variables</H1>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+Just like other programming languages, Sass allows the use of
+variables that can store information you can use throughout your
+style sheet. For example, you can store a colour value in a variable
+at the top of the file, and then use this variable when setting the
+colour of your elements. This enables you to quickly change your
+colours without having to modify each line separately.</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<B>For example:</B></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>$font-stack:    Helvetica, sans-serif;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>$primary-color: #333;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>body {</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>font: 100% $font-stack;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>color: $primary-color;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>}</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>The following CSS will be produced:</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>body {</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>font: 100% Helvetica, sans-serif;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>color: #333;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>}</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<H1 LANG="en-US" CLASS="western" ALIGN=LEFT>Nesting</H1>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+Nesting is a double-edged sword. While it provides an excellent
+method for reducing the amount of code you need to write, it can also
+lead to over-qualified CSS if not executed carefully. The idea is to
+nest your CSS selectors in such a way as to mimic your HTML
+hierarchy.</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+The following shows a basic navigation style that uses nesting:</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>nav {</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>ul {</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+    <I>margin: 0;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+    <I>padding: 0;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+    <I>list-style: none;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>}</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>li { display: inline-block; }</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>a {</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+    <I>display: block;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+    <I>padding: 6px 12px;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+    <I>text-decoration: none;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>}</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>}</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<B>The CSS output is as follows:</B></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>nav ul {</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>margin: 0;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>padding: 0;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>list-style: none;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>}</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>nav li {</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>display: inline-block;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>}</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>nav a {</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>display: block;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>padding: 6px 12px;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>text-decoration: none;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>}</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<H1 LANG="en-US" CLASS="western" ALIGN=LEFT>Partials</H1>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+Partials are smaller Sass files that can be imported (see next
+section) into other Sass files. Think of partials as code snippets.
+With these code snippets, your CSS can now be modular and easier to
+maintain. A partial is designated as such by naming it with a leading
+underscore: _partial.scss.</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+Import</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+Used with Partials (see previous section), the @import directive
+allows you to import your partial files into the current file, to
+build one single CSS file. Be mindful of how many imports you're
+using as an HTTP request will be generated for each one.</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+// _reset.scss</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>html,</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>body,</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>ul,</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>ol {</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+   <I>margin: 0;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>padding: 0;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>}</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+// basefile.scss</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+@import 'reset';</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>body {</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>font: 100% Helvetica, sans-serif;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>background-color: #efefef;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>}</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>And the corresponding CSS output:</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>html, body, ul, ol {</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>margin: 0;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>padding: 0;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>}</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>body {</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>font: 100% Helvetica, sans-serif;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>background-color: #efefef;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>}</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>Note: When importing partials, you don't need to include the file
+extension or the underscore.</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<H1 LANG="en-US" CLASS="western" ALIGN=LEFT>Mixins</H1>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<B>One of the advantages of using preprocessors is their ability to
+take complex, long-winded code and simplify it. This is where mixins
+come in handy! </B>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+For example, if you need to include the vendor prefixes, you can use
+a mixin instead. Take a look at this example for border-radius:</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>@mixin border-radius($radius) {</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>-webkit-border-radius: $radius;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+     <I>-moz-border-radius: $radius;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+      <I>-ms-border-radius: $radius;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+          <I>border-radius: $radius;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>}</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>.box { @include border-radius(10px); }</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+Notice the @mixin directive at the top. It has been given the name
+border-radius and uses the variable $radius as its parameter. This
+variable is used to set the radius value for each element. 
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+Later, the @include directive is called, along with the mixin name
+(border-radius) and a parameter (10px). Thus .box { @include
+border-radius(10px); }.</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<B>The following CSS is produced:</B></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>.box {</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>-webkit-border-radius: 10px;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>-moz-border-radius: 10px;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>-ms-border-radius: 10px;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+  <I>border-radius: 10px;</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<I>}</I></P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<H1 LANG="en-US" CLASS="western" ALIGN=LEFT>Extend/Inheritance</H1>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+The @extend directive has been called one of Sass' most powerful
+features. After seeing it in action, it's clear why.</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+The idea is that with this directive you won't have to include
+multiple class names on your HTML elements and can keep your code DRY
+(don't repeat yourself). Your selectors can inherit the styles of
+other selectors, and then be easily extended when required. Now
+that's powerful.</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+Operators</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+Having the ability to perform calculations in your CSS allows you to
+do more, like convert pixel values into percentages. You'll have
+access to standard maths functions like addition, subtraction,
+multiplication and division. Of course, these functions can be
+combined to create complex calculations.</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+In addition, Sass includes a few built-in functions to help
+manipulate numbers. Functions like percentage(), floor() and round()
+to name a few.</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<H2 LANG="en-US" CLASS="western" ALIGN=LEFT> Tammy Coron</H2>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=LEFT STYLE="margin-bottom: 0cm; line-height: 100%">
+<B>Tammy is an independent creative professional and the host of
+Roundabout: Creative Chaos. She&rsquo;s also the owner of Just Write
+Code, an independent production company located in West Tennessee.
+For more information about Tammy, visit her website by clicking the
+icons above. </B>
+</P>
+</BODY>
+</HTML>
