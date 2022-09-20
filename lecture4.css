@@ -1,31 +1,26 @@
 body {
-  background-color: FFCCCC;
-}
-
-h1 {
-  color: black;
-  font-family: verdana;
-}
-
-h2 {
-  color: 666666;
-  font-family: verdana;
-}
-
-p {
-  color: 999999;
-  font-family: verdana;
-  margin: 40px;
-}
-
-I {
-  color: 999999;
-  font-family: verdana;
-  margin: 40px;
-}
-
-B {
-  color: 999999;
-  font-family: verdana;
-  margin: 40px;
-}
+    background-color: blanchedalmond;
+  }
+  
+  h1 {
+    color: black;
+  }
+  
+  h2 {
+    color: 666666;
+  }
+  
+  p {
+    color: 999999;
+    margin: 5px;
+  }
+  
+  I {
+    color: 999999;
+    margin: 5px;
+  }
+  
+  B {
+    color: 999999;
+    margin: 5px;
+  }
