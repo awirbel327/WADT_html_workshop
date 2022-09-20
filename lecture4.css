@@ -1,5 +1,7 @@
 body {
     background-color: blanchedalmond;
+    margin: 20px;
+    margin-right: 100px;
   }
   
   h1 {
@@ -12,15 +14,12 @@ body {
   
   p {
     color: 999999;
-    margin: 5px;
   }
   
   I {
     color: 999999;
-    margin: 5px;
   }
   
   B {
     color: 999999;
-    margin: 5px;
   }
