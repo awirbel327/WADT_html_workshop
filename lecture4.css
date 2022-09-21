@@ -16,6 +16,7 @@ body {
     color: 999999;
   }
   
+
   I {
     color: 999999;
   }
@@ -23,3 +24,35 @@ body {
   B {
     color: 999999;
   }
+
+  .btn-hover.color {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+.btn-hover {
+  width: 100px;
+  font-size: 8px;
+  font-weight: 300;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  height: 40px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+}
+
+#myImage{
+  width: 50px;
+  height: 50px;
+}
