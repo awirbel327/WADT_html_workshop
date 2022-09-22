@@ -7,7 +7,26 @@
      <script src="lecture.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WADT Lecture 4</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+      $("#start").click(function(){
+        $("div").animate({height: 300}, 3000);
+        $("div").animate({width: 300}, 3000);
+      });
+      $("#finish").click(function(){
+        $("div").finish();
+      });
+      $("#stop").click(function(){
+        $("div").stop();
+  });
+    });
+    $(document).ready(function(){
+  $("#jqevent").click(function(){
+    $(this).hide();
+  });
+});
+    </script> 
 </head>
 <body>
     <I>Disclaimer: this is TSI University task for HTML, CSS and SASS workshop, not for publishing anywhere on the media. Please include this disclaimer</I>
@@ -207,15 +226,25 @@ Note: When importing partials, you don't need to include the file extension or t
     </form><br><br>
     <br><br><br>
 
-
+    <h2>Click button below to move the image to right</h2><br>
     <form>
       <img id = "myImage" src = "C:\Users\Anna-Louisa Wirbel\Desktop\WADT\doc to html\arrow.jpeg" />
-      <p>Click button below to move the image to right</p>
       <input type = "button" value = "Click Me" onclick = "moveRight();" />
    </form>  
 
-   <br><br><br><br><br>
+   <br><br><br><br>
+   <p><!--3 Jquerry-->
+    <h2>A nice animation</h2>
+    <button id="start">Start Animation</button>
+    <button id="finish">Finish Current Animation</button>
+    <button id="stop">Stop Current Animation</button>
+    </p>
+    
+    <div style="background:#bf9221;height:100px;width:100px"></div>
       
-   
+    <br><br><br><br>
+    <!--Jquerry Event-->
+    <h2>Free the unicorn with only 1 click!</h2>
+    <button id="jqevent">open the rainbow for me and i disappear like a unicorn in wonderland</button>
 </body>
 </html>
