@@ -1,0 +1,89 @@
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+}
+.h2Band{
+    color: brown;
+    text-decoration-line: line-through;
+    text-decoration-color: brown;
+}
+
+.hoverZoom{
+    transition: transform 0.8s;
+}
+
+.hoverZoom:hover,
+.hoverZoom:focus{
+    -ms-transform: scale(1.5);
+   transform: scale(1.5);
+}
+
+.body {
+    font-family: "Lato", sans-serif}
+
+.mySlides {
+    display: none}
+
+#numb{
+    margin-left: 35%;
+}
+
+#insert{
+    text-align: center;
+}
+
+#buytext{
+    text-align: center;
+}
+
+/*animation*/
+
+#loader{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .loader{
+    position: relative;
+    display: flex;
+}
+
+section .loader .dot{
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px white,
+                0 0 20px white,
+                0 0 40px white,
+                0 0 60px white,
+                0 0 80px white,
+                0 0 100px white;
+    margin: 20px 10px;
+    transform: scale(0.1);
+    border-radius: 50%;
+    animation: animateDot 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animateDot{
+    0%{
+        transform: scale(0.1);
+    }
+
+    10%{
+        transform: scale(1);
+    }
+    50%,100%{
+        transform: scale(0.1);
+    }
+}
